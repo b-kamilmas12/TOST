@@ -1,0 +1,197 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Form Survei dan Pengambilan Data</h:title>
+    <model>
+      <instance>
+        <data id="build_Form-Survei-dan-Pengambilan-Data_1457870835">
+          <meta>
+            <instanceID/>
+          </meta>
+          <dataNama1/>
+          <dataNRP1/>
+          <dataNama2/>
+          <dataNRP2/>
+          <dataNama3/>
+          <dataNRP3/>
+          <dataNama4/>
+          <dataNRP4/>
+          <dataNama5/>
+          <dataNRP5/>
+          <dataInstansi/>
+          <dataPegawai/>
+          <dataJabatan/>
+          <dataAlamat/>
+          <dataMatkul/>
+          <dataTujuan/>
+          <dataData/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/dataNama1:label">
+            <value>Nama Mahasiswa 1</value>
+          </text>
+          <text id="/data/dataNRP1:label">
+            <value>NRP Mahasiswa1</value>
+          </text>
+          <text id="/data/dataNama2:label">
+            <value>Nama Mahasiswa 2</value>
+          </text>
+          <text id="/data/dataNama2:hint">
+            <value>Isikan jika ada</value>
+          </text>
+          <text id="/data/dataNRP2:label">
+            <value>NRP Mahasiswa 2</value>
+          </text>
+          <text id="/data/dataNRP2:hint">
+            <value>Isikan jika ada</value>
+          </text>
+          <text id="/data/dataNama3:label">
+            <value>Nama Mahasiswa 3</value>
+          </text>
+          <text id="/data/dataNama3:hint">
+            <value>Isikan jika ada</value>
+          </text>
+          <text id="/data/dataNRP3:label">
+            <value>NRP Mahasiswa 3</value>
+          </text>
+          <text id="/data/dataNRP3:hint">
+            <value>Isikan jika ada</value>
+          </text>
+          <text id="/data/dataNama4:label">
+            <value>Nama Mahasiswa 4</value>
+          </text>
+          <text id="/data/dataNama4:hint">
+            <value>Isikan jika ada</value>
+          </text>
+          <text id="/data/dataNRP4:label">
+            <value>NRP Mahasiswa 4</value>
+          </text>
+          <text id="/data/dataNRP4:hint">
+            <value>Isikan jika ada</value>
+          </text>
+          <text id="/data/dataNama5:label">
+            <value>Nama Mahasiswa 5</value>
+          </text>
+          <text id="/data/dataNama5:hint">
+            <value>Isikan jika ada</value>
+          </text>
+          <text id="/data/dataNRP5:label">
+            <value>NRP Mahasiswa 5</value>
+          </text>
+          <text id="/data/dataNRP5:hint">
+            <value>Isikan jika ada</value>
+          </text>
+          <text id="/data/dataInstansi:label">
+            <value>Nama Instansi</value>
+          </text>
+          <text id="/data/dataInstansi:hint">
+            <value>Instansi yang dituju</value>
+          </text>
+          <text id="/data/dataPegawai:label">
+            <value>Nama perwakilan Instansi</value>
+          </text>
+          <text id="/data/dataJabatan:label">
+            <value>Jabatan perwakilan Instansi</value>
+          </text>
+          <text id="/data/dataAlamat:label">
+            <value>Alamat Instansi</value>
+          </text>
+          <text id="/data/dataMatkul:label">
+            <value>Mata Kuliah</value>
+          </text>
+          <text id="/data/dataMatkul:hint">
+            <value>Tulis tanpa disingkat</value>
+          </text>
+          <text id="/data/dataTujuan:label">
+            <value>Tujuan Survei</value>
+          </text>
+          <text id="/data/dataData:label">
+            <value>Data Yang Diperlukan</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/dataNama1" type="string" required="true()"/>
+      <bind nodeset="/data/dataNRP1" type="string" required="true()" constraint="(regex(., &quot;^.{10,10}$&quot;))" jr:constraintMsg="Response length must be between 10 and 10"/>
+      <bind nodeset="/data/dataNama2" type="string"/>
+      <bind nodeset="/data/dataNRP2" type="string" constraint="(regex(., &quot;^.{10,10}$&quot;))" jr:constraintMsg="Response length must be between 10 and 10"/>
+      <bind nodeset="/data/dataNama3" type="string"/>
+      <bind nodeset="/data/dataNRP3" type="string" constraint="(regex(., &quot;^.{10,10}$&quot;))" jr:constraintMsg="Response length must be between 10 and 10"/>
+      <bind nodeset="/data/dataNama4" type="string"/>
+      <bind nodeset="/data/dataNRP4" type="string" constraint="(regex(., &quot;^.{10,10}$&quot;))" jr:constraintMsg="Response length must be between 10 and 10"/>
+      <bind nodeset="/data/dataNama5" type="string"/>
+      <bind nodeset="/data/dataNRP5" type="string" constraint="(regex(., &quot;^.{10,10}$&quot;))" jr:constraintMsg="Response length must be between 10 and 10"/>
+      <bind nodeset="/data/dataInstansi" type="string" required="true()"/>
+      <bind nodeset="/data/dataPegawai" type="string" required="true()"/>
+      <bind nodeset="/data/dataJabatan" type="string" required="true()"/>
+      <bind nodeset="/data/dataAlamat" type="string" required="true()"/>
+      <bind nodeset="/data/dataMatkul" type="string" required="true()"/>
+      <bind nodeset="/data/dataTujuan" type="string" required="true()"/>
+      <bind nodeset="/data/dataData" type="string" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/dataNama1">
+      <label ref="jr:itext('/data/dataNama1:label')"/>
+    </input>
+    <input ref="/data/dataNRP1">
+      <label ref="jr:itext('/data/dataNRP1:label')"/>
+    </input>
+    <input ref="/data/dataNama2">
+      <label ref="jr:itext('/data/dataNama2:label')"/>
+      <hint ref="jr:itext('/data/dataNama2:hint')"/>
+    </input>
+    <input ref="/data/dataNRP2">
+      <label ref="jr:itext('/data/dataNRP2:label')"/>
+      <hint ref="jr:itext('/data/dataNRP2:hint')"/>
+    </input>
+    <input ref="/data/dataNama3">
+      <label ref="jr:itext('/data/dataNama3:label')"/>
+      <hint ref="jr:itext('/data/dataNama3:hint')"/>
+    </input>
+    <input ref="/data/dataNRP3">
+      <label ref="jr:itext('/data/dataNRP3:label')"/>
+      <hint ref="jr:itext('/data/dataNRP3:hint')"/>
+    </input>
+    <input ref="/data/dataNama4">
+      <label ref="jr:itext('/data/dataNama4:label')"/>
+      <hint ref="jr:itext('/data/dataNama4:hint')"/>
+    </input>
+    <input ref="/data/dataNRP4">
+      <label ref="jr:itext('/data/dataNRP4:label')"/>
+      <hint ref="jr:itext('/data/dataNRP4:hint')"/>
+    </input>
+    <input ref="/data/dataNama5">
+      <label ref="jr:itext('/data/dataNama5:label')"/>
+      <hint ref="jr:itext('/data/dataNama5:hint')"/>
+    </input>
+    <input ref="/data/dataNRP5">
+      <label ref="jr:itext('/data/dataNRP5:label')"/>
+      <hint ref="jr:itext('/data/dataNRP5:hint')"/>
+    </input>
+    <input ref="/data/dataInstansi">
+      <label ref="jr:itext('/data/dataInstansi:label')"/>
+      <hint ref="jr:itext('/data/dataInstansi:hint')"/>
+    </input>
+    <input ref="/data/dataPegawai">
+      <label ref="jr:itext('/data/dataPegawai:label')"/>
+    </input>
+    <input ref="/data/dataJabatan">
+      <label ref="jr:itext('/data/dataJabatan:label')"/>
+    </input>
+    <input ref="/data/dataAlamat">
+      <label ref="jr:itext('/data/dataAlamat:label')"/>
+    </input>
+    <input ref="/data/dataMatkul">
+      <label ref="jr:itext('/data/dataMatkul:label')"/>
+      <hint ref="jr:itext('/data/dataMatkul:hint')"/>
+    </input>
+    <input ref="/data/dataTujuan">
+      <label ref="jr:itext('/data/dataTujuan:label')"/>
+    </input>
+    <input ref="/data/dataData">
+      <label ref="jr:itext('/data/dataData:label')"/>
+    </input>
+  </h:body>
+</h:html>
