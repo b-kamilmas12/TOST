@@ -6,3 +6,4 @@ public class NotI18N {
         System.out.println("How are you?");
         System.out.println("Goodbye.");
     }
+}

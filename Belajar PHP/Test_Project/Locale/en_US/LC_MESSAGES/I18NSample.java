@@ -7,14 +7,14 @@ public class I18NSample {
         String language;
         String country;
 
-        if (args.length != 2) {
+        if (arch.length != 2) {
             language = new String("en");
             country = new String("US");
         } 
 
         else {
-            language = new String(args[0]);
-            country = new String(args[1]);
+            language = new String(arch[0]);
+            country = new String(arch[1]);
         }
 
         Locale currentLocale;
